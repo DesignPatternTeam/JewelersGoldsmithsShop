@@ -51,18 +51,6 @@
 
 	- **单点**
 
-		- **面条 Noodles**
-
-			面条分为：大排面(PorkNoodles)，虾仁面(ShrimpNoodles)，素面(VegetarianNoodles)。
-
-			属性：
-
-			- 所需食材列表
-			- 价格
-
-		- **饮品 Beverage**
-			饮品分为：可乐(Coke)，橙汁(OrangeJuice)。
-
 		- 项链
 
 			分为金项链，银项链，金镶钻石，银镶钻石
