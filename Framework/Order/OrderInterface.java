@@ -5,5 +5,5 @@ public interface OrderInterface {
 
     boolean hasTray();
 
-    void displayMerches();
+    void displayCommodities();
 }
