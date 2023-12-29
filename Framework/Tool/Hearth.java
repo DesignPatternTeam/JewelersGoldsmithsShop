@@ -19,12 +19,12 @@ public class Hearth extends Tool {
 
     @Override
     public String getName() {
-        return "灶台";
+        return "加工台";
     }
 
     @Override
     void startProcessing(Ingredient ingredient) {
-        System.out.println("开始烹饪" + ingredient.getName() + "...");
+        System.out.println("开始加工" + ingredient.getName() + "...");
     }
 
     @Override
