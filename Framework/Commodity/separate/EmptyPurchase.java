@@ -11,6 +11,6 @@ public class EmptyPurchase extends SeparatePurchase {
     }
 
     @Override
-    public void handle() {
+    public void process() {
     }
 }
