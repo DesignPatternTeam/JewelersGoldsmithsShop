@@ -1,13 +1,13 @@
-package Framework.Commodity.separate.cufflinks;
+package Framework.Commodity.separate.necklaces;
 
 import Framework.Commodity.separate.SeparatePurchase;
 import Framework.Ingredient.IngredientType;
 
 import java.util.List;
 
-public abstract class Cufflinks extends SeparatePurchase {
+public abstract class Necklaces extends SeparatePurchase {
     private List<IngredientType>
-    public Cufflinks(double price) {
+    public Necklaces(double price) {
         super(price);
     }
 }
