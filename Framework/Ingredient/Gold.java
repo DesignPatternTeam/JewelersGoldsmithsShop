@@ -1,6 +1,5 @@
-package framework.ingredient;
-
-import framework.cooker.CounterTop;
+package Framework.Ingredient;
+import Framework.Tool.CounterTop;
 
 public class Gold extends Ingredient {
     Gold(double baseStateUpdateRate) {

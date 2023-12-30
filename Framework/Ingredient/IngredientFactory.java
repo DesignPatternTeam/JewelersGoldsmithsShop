@@ -1,4 +1,4 @@
-package framework.ingredient;
+package Framework.Ingredient;
 
 import java.util.ArrayList;
 
