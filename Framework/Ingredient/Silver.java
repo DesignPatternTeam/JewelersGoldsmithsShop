@@ -1,7 +1,5 @@
-package framework.ingredient;
-
-
-import framework.cooker.CounterTop;
+package Framework.Ingredient;
+import Framework.Tool.CounterTop;
 
 public class Silver extends Ingredient {
 

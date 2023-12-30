@@ -2,6 +2,7 @@ package Framework.Container;
 
 import Framework.Boss.BossVistor;
 import Framework.Ingredient.Ingredient;
+import Framework.Ingredient.IngredientFactory;
 import Framework.Ingredient.IngredientType;
 
 import java.util.ArrayList;

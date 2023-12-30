@@ -1,6 +1,6 @@
-package framework.ingredient;
+package Framework.Ingredient;
 
-import framework.cooker.Hearth;
+import Framework.Tool.Hearth;
 
 public class Jade extends Ingredient {
     Jade(double baseStateUpdateRate) {
