@@ -1,6 +1,5 @@
-package framework.ingredient;
-
-import framework.cooker.Hearth;
+package Framework.Ingredient;
+import Framework.Tool.Hearth;
 
 public class Diamond extends Ingredient {
     Diamond(double baseStateUpdateRate) {

@@ -1,4 +1,4 @@
-package framework.ingredient;
+package Framework.Ingredient;
 
 public enum IngredientType {
     SHRIMP("金"), PORKPATTY("银"), PAKCHOI("玉石"), ROWNODDLE("钻石");

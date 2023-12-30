@@ -1,4 +1,4 @@
-package framework.ingredient;
+package Framework.Ingredient;
 
 public interface IngredientMemento {}
 

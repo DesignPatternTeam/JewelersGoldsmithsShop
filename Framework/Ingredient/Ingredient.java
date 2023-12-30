@@ -1,9 +1,4 @@
-package framework.ingredient;
-
-import framework.cooker.Cooker;
-import framework.ingredient.state.*;
-import framework.time.TimeObserver;
-import framework.time.Timer;
+package Framework.Ingredient;
 
 /**
  * Strategy, Prototype, Memento
