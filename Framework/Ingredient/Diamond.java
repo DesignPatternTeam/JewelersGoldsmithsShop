@@ -3,8 +3,8 @@ import Framework.Tool.Hearth;
 
 public class Diamond extends Ingredient {
     Diamond(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
-        this.setCooker(new Hearth());
+        // super(baseStateUpdateRate);
+        this.setTool(new Hearth());
     }
 
     @Override

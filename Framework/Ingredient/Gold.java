@@ -3,8 +3,8 @@ import Framework.Tool.CounterTop;
 
 public class Gold extends Ingredient {
     Gold(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
-        this.setCooker(new CounterTop());
+        // super(baseStateUpdateRate);
+        this.setTool(new CounterTop());
     }
 
     @Override

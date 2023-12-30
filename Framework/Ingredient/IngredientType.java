@@ -1,7 +1,7 @@
 package Framework.Ingredient;
 
 public enum IngredientType {
-    SHRIMP("金"), PORKPATTY("银"), PAKCHOI("玉石"), ROWNODDLE("钻石");
+    GOLD("金"), SILVER("银"), JADE("玉石"), DIAMOND("钻石");
 
     String name;
 

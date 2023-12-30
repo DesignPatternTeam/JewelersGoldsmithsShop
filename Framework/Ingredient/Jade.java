@@ -4,8 +4,8 @@ import Framework.Tool.Hearth;
 
 public class Jade extends Ingredient {
     Jade(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
-        this.setCooker(new Hearth());
+        // super(baseStateUpdateRate);
+        this.setTool(new Hearth());
     }
 
     @Override
