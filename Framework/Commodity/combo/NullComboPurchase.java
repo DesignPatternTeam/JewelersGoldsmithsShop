@@ -1,9 +1,9 @@
-package Framework.Commodity.set;
+package Framework.Commodity.combo;
 
 import java.util.ArrayList;
 
-public class NullSet extends Set {
-    public NullSet() {
+public class NullComboPurchase extends ComboPurchase {
+    public NullComboPurchase() {
         super(new ArrayList<>());
     }
 
@@ -13,7 +13,5 @@ public class NullSet extends Set {
     }
 
     @Override
-    public void handle() {
-
-    }
+    public void process() {}
 }
