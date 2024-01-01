@@ -10,8 +10,8 @@ import java.util.Arrays;
 public class JadeNecklacesAndBracelets extends ComboPurchase {
     public JadeNecklacesAndBracelets() {
         super(new ArrayList<SeparatePurchase>(Arrays.asList(
-                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.NECKLACES).createPurchase(CommodityType.JADE_INLAID_GOLD_NECKLACE),
-                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.BRACELETS).createPurchase(CommodityType.JADE_BRACELET)
+                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.NECKLACES).createSeparatePurchase(CommodityType.JADE_INLAID_GOLD_NECKLACE),
+                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.BRACELETS).createSeparatePurchase(CommodityType.JADE_BRACELET)
         )));
     }
 

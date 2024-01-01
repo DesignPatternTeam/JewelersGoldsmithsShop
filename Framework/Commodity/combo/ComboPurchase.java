@@ -6,7 +6,7 @@ import Framework.Commodity.separate.SeparatePurchase;
 import java.util.ArrayList;
 
 public abstract class ComboPurchase extends Commodity {
-    private ArrayList<SeparatePurchase> commodityComposite = new ArrayList<>();
+    private final ArrayList<SeparatePurchase> commodityComposite = new ArrayList<>();
 
     ComboPurchase(ArrayList<SeparatePurchase> commodityComposite) {
         super(

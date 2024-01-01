@@ -44,7 +44,7 @@ public class OrderBuilder {
     public void orderSet(CommodityType type) {
         try {
             CommodityFactory factory = CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.COMBO);
-            commodities.add(factory.createSeparatePurchase(type));
+            commodities.add(factory.createComboPurchase(type));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

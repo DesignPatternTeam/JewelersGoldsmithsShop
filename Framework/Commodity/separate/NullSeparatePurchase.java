@@ -1,7 +1,7 @@
 package Framework.Commodity.separate;
 
-public class EmptyPurchase extends SeparatePurchase {
-    public EmptyPurchase() {
+public class NullSeparatePurchase extends SeparatePurchase {
+    public NullSeparatePurchase() {
         super(0);
     }
 
