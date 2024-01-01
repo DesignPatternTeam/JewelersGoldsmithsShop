@@ -1,4 +1,4 @@
-package Framework.Commodity.separate.necklaces;
+package Framework.Commodity.separate.fingerring;
 
 import Framework.Boss.Boss;
 import Framework.Commodity.separate.SeparatePurchase;
@@ -6,9 +6,9 @@ import Framework.Ingredient.IngredientType;
 
 import java.util.List;
 
-public abstract class Necklaces extends SeparatePurchase {
+public abstract class Fingerring extends SeparatePurchase {
     private final List<IngredientType> requirements;
-    public Necklaces(List<IngredientType> requirements, double price) {
+    public Fingerring(List<IngredientType> requirements,double price) {
         super(price);
         this.requirements = requirements;
     }
