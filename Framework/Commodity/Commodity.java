@@ -13,5 +13,5 @@ public abstract class Commodity {
 
     public abstract String getName();
 
-    public abstract void handle();
+    public abstract void process();
 }

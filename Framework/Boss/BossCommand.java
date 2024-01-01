@@ -1,5 +1,4 @@
 package Framework.Boss;
-
 import Framwork.Order.Order;
 public interface BossCommand {
     void showStock();/*查看库存*/
