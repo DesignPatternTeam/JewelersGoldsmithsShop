@@ -7,7 +7,7 @@ import Framework.Ingredient.IngredientType;
 import java.util.List;
 
 public abstract class Necklaces extends SeparatePurchase {
-    private final List<IngredientType> requirements;
+    private List<IngredientType> requirements;
     public Necklaces(List<IngredientType> requirements, double price) {
         super(price);
         this.requirements = requirements;

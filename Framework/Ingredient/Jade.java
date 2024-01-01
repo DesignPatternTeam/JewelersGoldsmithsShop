@@ -1,10 +1,10 @@
 package Framework.Ingredient;
 
-import Framework.Tool.Hearth;
+import Framework.Tool.CounterTop;
 
 public class Jade extends Ingredient {
     Jade() {
-        this.setCooker(new Hearth());
+        this.setTool(new CounterTop());
     }
 
     @Override
