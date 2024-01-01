@@ -3,8 +3,7 @@ package Framework.Ingredient;
 import Framework.Tool.Hearth;
 
 public class Jade extends Ingredient {
-    Jade(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
+    Jade() {
         this.setCooker(new Hearth());
     }
 

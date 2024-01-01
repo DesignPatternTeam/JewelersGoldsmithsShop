@@ -2,7 +2,7 @@ package Framework.Tool;
 
 import Framework.Ingredient.Ingredient;
 import Framework.Ingredient.IngredientType;
-import Framework.Ingredient.state.IngredientStateType;
+import Framework.Ingredient.state.StateType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,8 +13,8 @@ import java.util.Arrays;
 public class Hearth extends Tool {
     public Hearth() {
         this.availableTypes = new ArrayList<>(Arrays.asList(
-                IngredientType.PORKPATTY,
-                IngredientType.SHRIMP));
+                IngredientType.SILVER,
+                IngredientType.GOLD));
     }
 
     @Override
@@ -29,7 +29,7 @@ public class Hearth extends Tool {
 
     @Override
     void finishProcessing(Ingredient ingredient) {
-        ingredient.changeState(IngredientStateType.COOKED);
+        ingredient.changeState(StateType.PROCESSED);
         System.out.println("你成功地使用" + this.getName() + "加工好了" + ingredient.getName());
     }
 }

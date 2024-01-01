@@ -2,14 +2,17 @@ package Framework.Container;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import Framework.Boss.BossVisitor;
 import Framework.Ingredient.IngredientType;
-import Framework.Boss.BossVistor;
 
 public class Vault extends Container{
     private Vault(){
         super(new ArrayList<>(Arrays.asList(
-                IngredientType.ROWNODDLE,
-                IngredientType.PAKCHOI)));
+                IngredientType.GOLD,
+                IngredientType.SILVER,
+                IngredientType.DIAMOND,
+                IngredientType.JADE)));
 
         if (instance == null) {
             instance = this;
@@ -33,7 +36,7 @@ public class Vault extends Container{
     }
 
     @Override
-    public void accept(BossVistor visitor) {
+    public void accept(BossVisitor visitor) {
         visitor.visit(this);
     }
 }

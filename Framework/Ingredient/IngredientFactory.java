@@ -7,23 +7,18 @@ import java.util.ArrayList;
  */
 public class IngredientFactory {
     public Ingredient createIngredient(IngredientType ingredientType) {
-        switch (ingredientType) {
-            case GOLD:
-                return new Gold(0.2);
-            case SILVER:
-                return new Silver(0.8);
-            case JADE:
-                return new Jade(1.1);
-            case DIAMOND:
-                return new Diamond(0.5);
-            default:
-                throw new IllegalArgumentException("no such ingredient");
-        }
+        return switch (ingredientType) {
+            case GOLD -> new Gold();
+            case SILVER -> new Silver();
+            case JADE -> new Jade();
+            case DIAMOND -> new Diamond();
+            default -> throw new IllegalArgumentException("no such ingredient");
+        };
     }
 
     public ArrayList<Ingredient> createIngredientList(IngredientType ingredientType, Integer count) {
         ArrayList<Ingredient> ingredients = new ArrayList<>();
-        for (Integer i = 0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
             ingredients.add(this.createIngredient(ingredientType));
         }
         return ingredients;

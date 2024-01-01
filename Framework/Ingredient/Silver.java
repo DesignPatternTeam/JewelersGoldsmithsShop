@@ -3,8 +3,7 @@ import Framework.Tool.CounterTop;
 
 public class Silver extends Ingredient {
 
-    Silver(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
+    Silver() {
         this.setCooker(new CounterTop());
     }
 

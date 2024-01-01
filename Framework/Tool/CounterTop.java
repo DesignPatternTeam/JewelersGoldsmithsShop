@@ -2,7 +2,7 @@ package Framework.Tool;
 
 import Framework.Ingredient.Ingredient;
 import Framework.Ingredient.IngredientType;
-import Framework.Ingredient.state.IngredientStateType;
+import Framework.Ingredient.state.StateType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,8 +13,8 @@ import java.util.Arrays;
 public class CounterTop extends Tool {
     public CounterTop() {
         this.availableTypes = new ArrayList<>(Arrays.asList(
-                IngredientType.ROWNODDLE,
-                IngredientType.PAKCHOI));
+                IngredientType.JADE,
+                IngredientType.DIAMOND));
     }
 
     @Override
@@ -29,7 +29,7 @@ public class CounterTop extends Tool {
 
     @Override
     void finishProcessing(Ingredient ingredient) {
-        ingredient.changeState(IngredientStateType.COOKED);
+        ingredient.changeState(StateType.PROCESSED);
         System.out.println("你成功地使用" + this.getName() + "加工好了" + ingredient.getName());
     }
 }

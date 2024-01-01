@@ -5,7 +5,7 @@ import Framework.Container.TrayDecorator;
 import Framework.Ingredient.Ingredient;
 import Framework.Ingredient.IngredientType;
 import Framework.Order.Order;
-public final class Boss {
+public final class Boss implements BossCommand{
     private Boss() {
         if (instance == null) {
             instance = this;
@@ -15,8 +15,8 @@ public final class Boss {
 
         System.out.println("Boss, start to work\n");
     }
-    private static Chef instance;
-    private BossVistorVisitor visitor = new SimpleBossVisitor();
+    private static Boss instance;
+    private BossVisitor visitor = new SimpleBossVisitor();
     public static synchronized Boss getInstance() {
         if (instance == null) {
             instance = new Boss();

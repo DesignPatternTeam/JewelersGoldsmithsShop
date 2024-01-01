@@ -1,6 +1,6 @@
 package Framework.Container;
 
-import Framework.Boss.BossVistor;
+import Framework.Boss.BossVisitor;
 import Framework.Ingredient.Ingredient;
 import Framework.Ingredient.IngredientFactory;
 import Framework.Ingredient.IngredientType;
@@ -69,6 +69,6 @@ public abstract class Container {
 
     public ContainerIterator Iterator() { return new ContainerIterator(ingredients); }
 
-    public abstract void accept(BossVistor visitor);
+    public abstract void accept(BossVisitor visitor);
     public abstract String getName();
 }
