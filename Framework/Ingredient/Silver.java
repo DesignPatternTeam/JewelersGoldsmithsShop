@@ -1,10 +1,10 @@
 package Framework.Ingredient;
-import Framework.Tool.CounterTop;
+import Framework.Tool.Hearth;
 
 public class Silver extends Ingredient {
 
     Silver() {
-        this.setCooker(new CounterTop());
+        this.setTool(new Hearth());
     }
 
     @Override

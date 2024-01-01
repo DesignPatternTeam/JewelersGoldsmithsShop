@@ -27,7 +27,7 @@ public class JewelersGoldsmithsShop {
 		TestFactoryPattern();
 		TestAbstractFactoryPattern();
 		TestTemplatePattern();
-		TestObserverPattern();
+//		TestObserverPattern();
 		TestStatePattern();
 		TestDecoratorPattern();
 		TestStrategyPattern();
@@ -39,16 +39,14 @@ public class JewelersGoldsmithsShop {
 		TestNullObjectPattern();
 		TestCompositePattern();
 		TestVisitorPattern();
-		TestMementoPattern();
+//		TestMementoPattern();
 		TestIteratorPattern();
 	}
 
 	public static void TestOrderProcess() {
-		// 下单测试
-		// 单例模式 Singleton
+		// 点单测试
 		Boss boss = Boss.getInstance();
 
-		// Command && Facade
 		boss.showStock();
 
 //		System.out.println("内部时间流动 10 个 tick，食材的新鲜度发生变化！");
@@ -57,15 +55,13 @@ public class JewelersGoldsmithsShop {
 //		}
 //		boss.showStock();
 
-		// Builder
 		OrderBuilder builder = new OrderBuilder();
-//		builder.orderNecklace(CommodityType.DIAMOND_INLAID_GOLD_NECKLACE);
-		// Composite
+		builder.orderNecklace(CommodityType.DIAMOND_INLAID_GOLD_NECKLACE);
+
 		builder.orderSet(CommodityType.JADE_INLAID_GOLD_NECKLACE_AND_JADE_BRACELET);
 		builder.orderRing(CommodityType.DIAMOND_INLAID_SILVER_RING);
 		Order order = builder.order();
 
-		// Command && Facade
 		boss.processOrder(order);
 	}
 
@@ -107,15 +103,15 @@ public class JewelersGoldsmithsShop {
 		System.out.println("*******************");
 	}
 
-	public static void TestObserverPattern() {
-		System.out.println("*******************");
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		Ingredient diamond = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
-		diamond.displayInfo();
-//		Timer.getInstance().tick(); ???
-		diamond.displayInfo();
-		System.out.println("*******************");
-	}
+//	public static void TestObserverPattern() {
+//		System.out.println("*******************");
+//		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+//		Ingredient diamond = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
+//		diamond.displayInfo();
+////		Timer.getInstance().tick(); ???
+//		diamond.displayInfo();
+//		System.out.println("*******************");
+//	}
 
 	public static void TestStatePattern() {
 		System.out.println("*******************");
@@ -126,9 +122,6 @@ public class JewelersGoldsmithsShop {
 		System.out.println("> 状态->加工");
 		diamond.changeState(StateType.PROCESSED);
 		System.out.printf("钻石是否加工： %b\n", diamond.isProcessed());
-//		System.out.println("> 状态->腐烂");
-//		diamond.changeState(IngredientStateType.STALE);
-//		System.out.printf("猪排是否加工： %b；腐烂: %b\n", diamond.isCooked(), diamond.isStale());
 		System.out.println("*******************");
 	}
 
@@ -152,7 +145,7 @@ public class JewelersGoldsmithsShop {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		Ingredient gold = new IngredientFactory().createIngredient(IngredientType.GOLD);
 		System.out.println("> 设置金的加工工具为 熔炉");
-		gold.setCooker(new Hearth());
+		gold.setTool(new Hearth());
 		gold.doProcess();
 		System.out.println("*******************");
 	}
@@ -212,7 +205,8 @@ public class JewelersGoldsmithsShop {
 			diamond1.displayInfo();
 			System.out.println("> diamond2 info");
 			diamond2.displayInfo();
-		} catch (CloneNotSupportedException e) {
+		}
+		catch (CloneNotSupportedException e) {
 			System.out.println("Clone is not supported on this ingredient");
 		}
 		System.out.println("*******************");
@@ -244,28 +238,29 @@ public class JewelersGoldsmithsShop {
 		System.out.println("*******************");
 	}
 
-	public static void TestMementoPattern() {
-		System.out.println("*******************");
-		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-		Ingredient ingredient = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
-		ingredient.displayInfo();
-		// 保存状态
-		IngredientMemento memento = ingredient.getMemento();
-
-//		System.out.println("1000 tick");
-//		for (int i = 0; i < 1000; ++i) {
-//			Timer.getInstance().tick();
-//		}
-		ingredient.displayInfo();
-
-		System.out.println("复原");
-		ingredient.setMemento(memento);
-		ingredient.displayInfo();
-		System.out.println("*******************");
-	}
+//	public static void TestMementoPattern() {
+//		System.out.println("*******************");
+//		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+//		Ingredient ingredient = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
+//		ingredient.displayInfo();
+//		// 保存状态
+//		IngredientMemento memento = ingredient.getMemento();
+//
+////		System.out.println("1000 tick");
+////		for (int i = 0; i < 1000; ++i) {
+////			Timer.getInstance().tick();
+////		}
+//		ingredient.displayInfo();
+//
+//		System.out.println("复原");
+//		ingredient.setMemento(memento);
+//		ingredient.displayInfo();
+//		System.out.println("*******************");
+//	}
 
 	public static void TestIteratorPattern() {
 		System.out.println("*******************");
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		Vault vault = Vault.getInstance();
 		System.out.println("保险箱里有：");
 

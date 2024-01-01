@@ -1,9 +1,9 @@
 package Framework.Ingredient;
-import Framework.Tool.Hearth;
+import Framework.Tool.CounterTop;
 
 public class Diamond extends Ingredient {
     Diamond() {
-        this.setCooker(new Hearth());
+        this.setTool(new CounterTop());
     }
 
     @Override

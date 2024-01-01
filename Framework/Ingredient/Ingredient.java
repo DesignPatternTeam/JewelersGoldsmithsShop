@@ -23,7 +23,7 @@ public abstract class Ingredient implements Cloneable {
      * DP: Strategy
      * @param tool
      */
-    public void setCooker(Tool tool) {
+    public void setTool(Tool tool) {
         this.tool = tool;
     }
 
