@@ -1,10 +1,11 @@
 package Framework.Commodity;
 
+import Framework.Commodity.separate.necklaces.DiamondInlaidGoldNecklace;
+import Framework.Commodity.separate.necklaces.JadeInlaidGoldNecklace;
 import Framework.Ingredient.IngredientType;
 import Framework.Commodity.separate.SeparatePurchase;
 import Framework.Commodity.combo.ComboPurchase;
-import Framework.Commodity.separate.DiamondInlaidGoldNecklace;
-import Framework.Commodity.separate.JadeInlaidGoldNecklace;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;

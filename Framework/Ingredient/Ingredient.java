@@ -31,7 +31,7 @@ public abstract class Ingredient implements Cloneable {
      * 使用设置的工具加工
      * DP: Strategy
      */
-    public void doCook() {
+    public void doProcess() {
         tool.process(this);
     }
 

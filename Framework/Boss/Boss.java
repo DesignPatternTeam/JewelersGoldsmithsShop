@@ -61,10 +61,10 @@ public final class Boss implements BossCommand{
     @Override
     public void processOrder(Order order) {
         System.out.println("Boss，new order！");
-        order.displayMerches();
+        order.displayCommodities();
         order.handle();
         TrayDecorator decorator = new TrayDecorator(order);
-        decorator.displayMerches();
+        decorator.displayCommodities();
         System.out.println("\n订单完成！");
     }
 

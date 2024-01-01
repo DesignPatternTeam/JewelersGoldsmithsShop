@@ -2,8 +2,9 @@ package Framework.Commodity;
 
 import Framework.Commodity.separate.SeparatePurchase;
 import Framework.Commodity.combo.ComboPurchase;
-import Framework.Commodity.separate.DiamondInlaidGoldNecklace;
-import Framework.Commodity.separate.DiamondInlaidSilverNecklace;
+
+import Framework.Commodity.separate.fingerring.DiamondInlaidGoldRing;
+import Framework.Commodity.separate.fingerring.DiamondInlaidSilverRing;
 import Framework.Ingredient.IngredientType;
 
 import java.util.ArrayList;

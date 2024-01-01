@@ -29,6 +29,12 @@ public class Hearth extends Tool {
 
     @Override
     void finishProcessing(Ingredient ingredient) {
+        // 延时2秒钟
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         ingredient.changeState(StateType.PROCESSED);
         System.out.println("你成功地使用" + this.getName() + "加工好了" + ingredient.getName());
     }
