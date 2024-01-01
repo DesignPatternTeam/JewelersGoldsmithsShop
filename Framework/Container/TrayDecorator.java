@@ -16,13 +16,13 @@ public class TrayDecorator implements OrderInterface {
     }
 
     @Override
-    public boolean hasTray() {
+    public boolean hasGiftBox() {
         return true;
     }
 
     @Override
-    public void displayMerches() {
+    public void displayCommodities() {
         System.out.println("本次订单已包装");
-        order.displayMerches();
+        order.displayCommodities();
     }
 }

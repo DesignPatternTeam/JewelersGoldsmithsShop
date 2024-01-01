@@ -2,8 +2,7 @@ package Framework.Ingredient;
 import Framework.Tool.Hearth;
 
 public class Diamond extends Ingredient {
-    Diamond(double baseStateUpdateRate) {
-        super(baseStateUpdateRate);
+    Diamond() {
         this.setCooker(new Hearth());
     }
 

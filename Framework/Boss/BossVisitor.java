@@ -2,6 +2,6 @@ package Framework.Boss;
 
 import Framework.Container.Container;
 
-public interface BossVistor {
+public interface BossVisitor {
     void visit(Container container);
 }
