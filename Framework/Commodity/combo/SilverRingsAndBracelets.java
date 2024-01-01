@@ -10,8 +10,8 @@ import java.util.Arrays;
 public class SilverRingsAndBracelets extends ComboPurchase {
     public SilverRingsAndBracelets() {
         super(new ArrayList<SeparatePurchase>(Arrays.asList(
-                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.RINGS).createPurchase(CommodityType.DIAMOND_INLAID_SILVER_RING),
-                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.BRACELETS).createPurchase(CommodityType.SILVER_BRACELET)
+                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.RINGS).createSeparatePurchase(CommodityType.DIAMOND_INLAID_SILVER_RING),
+                CommodityFactoryMaker.createFactory(CommodityFactoryMaker.CommodityFactoryType.BRACELETS).createSeparatePurchase(CommodityType.SILVER_BRACELET)
         )));
     }
 

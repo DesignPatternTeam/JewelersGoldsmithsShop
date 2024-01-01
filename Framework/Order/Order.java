@@ -32,7 +32,7 @@ public class Order implements OrderInterface {
     public void handle() {
         for(Commodity commodity : commodities) {
             System.out.println();
-            commodity.handle();
+            commodity.process();
         }
         System.out.println();
     }
@@ -42,7 +42,7 @@ public class Order implements OrderInterface {
     }
 
     @Override
-    public boolean hasTray() {
+    public boolean hasGiftBox() {
         return false;
     }
 }
