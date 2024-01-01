@@ -1,3 +1,4 @@
+import Framework.Boss.Boss;
 import Framework.Boss.SimpleBossVisitor;
 import Framework.Commodity.Commodity;
 import Framework.Commodity.CommodityFactory;
@@ -10,9 +11,7 @@ import Framework.Container.TrayDecorator;
 import Framework.Container.Vault;
 import Framework.Ingredient.Ingredient;
 import Framework.Ingredient.IngredientFactory;
-import Framework.Ingredient.IngredientMemento;
 import Framework.Ingredient.IngredientType;
-import Framework.Boss.Boss;
 import Framework.Ingredient.state.StateFactory;
 import Framework.Ingredient.state.StateType;
 import Framework.Order.Order;
@@ -27,7 +26,6 @@ public class JewelersGoldsmithsShop {
 		TestFactoryPattern();
 		TestAbstractFactoryPattern();
 		TestTemplatePattern();
-//		TestObserverPattern();
 		TestStatePattern();
 		TestDecoratorPattern();
 		TestStrategyPattern();
@@ -39,7 +37,6 @@ public class JewelersGoldsmithsShop {
 		TestNullObjectPattern();
 		TestCompositePattern();
 		TestVisitorPattern();
-//		TestMementoPattern();
 		TestIteratorPattern();
 	}
 
@@ -48,12 +45,6 @@ public class JewelersGoldsmithsShop {
 		Boss boss = Boss.getInstance();
 
 		boss.showStock();
-
-//		System.out.println("内部时间流动 10 个 tick，食材的新鲜度发生变化！");
-//		for (int i = 0; i < 10; i++) {
-//			Timer.getInstance().tick();
-//		}
-//		boss.showStock();
 
 		OrderBuilder builder = new OrderBuilder();
 		builder.orderNecklace(CommodityType.DIAMOND_INLAID_GOLD_NECKLACE);
@@ -102,16 +93,6 @@ public class JewelersGoldsmithsShop {
 		new CounterTop().process(diamond);
 		System.out.println("*******************");
 	}
-
-//	public static void TestObserverPattern() {
-//		System.out.println("*******************");
-//		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-//		Ingredient diamond = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
-//		diamond.displayInfo();
-////		Timer.getInstance().tick(); ???
-//		diamond.displayInfo();
-//		System.out.println("*******************");
-//	}
 
 	public static void TestStatePattern() {
 		System.out.println("*******************");
@@ -237,26 +218,6 @@ public class JewelersGoldsmithsShop {
 		Displayer.getInstance().accept(new SimpleBossVisitor());
 		System.out.println("*******************");
 	}
-
-//	public static void TestMementoPattern() {
-//		System.out.println("*******************");
-//		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
-//		Ingredient ingredient = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
-//		ingredient.displayInfo();
-//		// 保存状态
-//		IngredientMemento memento = ingredient.getMemento();
-//
-////		System.out.println("1000 tick");
-////		for (int i = 0; i < 1000; ++i) {
-////			Timer.getInstance().tick();
-////		}
-//		ingredient.displayInfo();
-//
-//		System.out.println("复原");
-//		ingredient.setMemento(memento);
-//		ingredient.displayInfo();
-//		System.out.println("*******************");
-//	}
 
 	public static void TestIteratorPattern() {
 		System.out.println("*******************");
