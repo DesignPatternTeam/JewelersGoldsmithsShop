@@ -10,8 +10,8 @@ import java.util.Arrays;
 /**
  * CounterTop 操作台
  */
-public class CounterTop extends Tool {
-    public CounterTop() {
+public class OperatorTop extends Tool {
+    public OperatorTop() {
         this.availableTypes = new ArrayList<>(Arrays.asList(
                 IngredientType.JADE,
                 IngredientType.DIAMOND));

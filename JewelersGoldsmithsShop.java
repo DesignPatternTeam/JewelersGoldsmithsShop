@@ -16,8 +16,8 @@ import Framework.Ingredient.state.StateFactory;
 import Framework.Ingredient.state.StateType;
 import Framework.Order.Order;
 import Framework.Order.OrderBuilder;
-import Framework.Tool.CounterTop;
-import Framework.Tool.Hearth;
+import Framework.Tool.OperatorTop;
+import Framework.Tool.ProcessTop;
 
 public class JewelersGoldsmithsShop {
 	public static void main(String[] args) {
@@ -89,8 +89,8 @@ public class JewelersGoldsmithsShop {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		Ingredient gold = new IngredientFactory().createIngredient(IngredientType.GOLD);
 		Ingredient diamond = new IngredientFactory().createIngredient(IngredientType.DIAMOND);
-		new Hearth().process(gold);
-		new CounterTop().process(diamond);
+		new ProcessTop().process(gold);
+		new OperatorTop().process(diamond);
 		System.out.println("*******************");
 	}
 
@@ -126,7 +126,7 @@ public class JewelersGoldsmithsShop {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		Ingredient gold = new IngredientFactory().createIngredient(IngredientType.GOLD);
 		System.out.println("> 设置金的加工工具为 熔炉");
-		gold.setTool(new Hearth());
+		gold.setTool(new ProcessTop());
 		gold.doProcess();
 		System.out.println("*******************");
 	}

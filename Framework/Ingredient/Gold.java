@@ -1,9 +1,9 @@
 package Framework.Ingredient;
-import Framework.Tool.Hearth;
+import Framework.Tool.ProcessTop;
 
 public class Gold extends Ingredient {
     Gold() {
-        this.setTool(new Hearth());
+        this.setTool(new ProcessTop());
     }
 
     @Override

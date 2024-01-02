@@ -1,9 +1,9 @@
 package Framework.Ingredient;
-import Framework.Tool.CounterTop;
+import Framework.Tool.OperatorTop;
 
 public class Diamond extends Ingredient {
     Diamond() {
-        this.setTool(new CounterTop());
+        this.setTool(new OperatorTop());
     }
 
     @Override
