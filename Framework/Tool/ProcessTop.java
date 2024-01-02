@@ -10,8 +10,8 @@ import java.util.Arrays;
 /**
  * hearth 炉子
  */
-public class Hearth extends Tool {
-    public Hearth() {
+public class ProcessTop extends Tool {
+    public ProcessTop() {
         this.availableTypes = new ArrayList<>(Arrays.asList(
                 IngredientType.SILVER,
                 IngredientType.GOLD));

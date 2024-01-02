@@ -1,10 +1,10 @@
 package Framework.Ingredient;
 
-import Framework.Tool.CounterTop;
+import Framework.Tool.OperatorTop;
 
 public class Jade extends Ingredient {
     Jade() {
-        this.setTool(new CounterTop());
+        this.setTool(new OperatorTop());
     }
 
     @Override

@@ -1,10 +1,10 @@
 package Framework.Ingredient;
-import Framework.Tool.Hearth;
+import Framework.Tool.ProcessTop;
 
 public class Silver extends Ingredient {
 
     Silver() {
-        this.setTool(new Hearth());
+        this.setTool(new ProcessTop());
     }
 
     @Override
